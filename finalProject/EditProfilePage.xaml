@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.EditProfilePage">
+    
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Edit profile page " HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+
+
+        <StackLayout>
+         
+
+            <Label Text="First Name" FontSize="Medium" Padding="5,10,30,10"/>
+            <Entry x:Name="fname"  Placeholder="enter your name here" FontSize="Medium" Margin="0,5" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Last Name" FontSize="Medium" Padding="5,10,30,10"/>
+            <Entry 
+            x:Name="lname"  
+            Placeholder="Last name here" 
+            FontSize="Medium" 
+            Margin="0,5" 
+            HorizontalTextAlignment="Center"/>
+
+            <Label Text="Email" FontSize="Medium" Padding="5,10,30,10"/>
+            <Entry 
+            x:Name="email"  
+            Placeholder="Your email  here " 
+            FontSize="Medium" 
+            Margin="0,5" 
+            HorizontalTextAlignment="Center"/>
+
+            <Label Text="Password" FontSize="Medium" Padding="5,10,30,10"/>
+            <Entry 
+            x:Name="password"  
+            Placeholder="Your password  here " 
+            FontSize="Medium" 
+            Margin="0,5" 
+            HorizontalTextAlignment="Center"/>
+
+            <Button Text="Update details" 
+                WidthRequest="200" 
+                HeightRequest="50" 
+                HorizontalOptions="Center" 
+                FontSize="Large" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnUpdateDetails"
+                Clicked="btnUpdateDetails_Clicked"
+                />
+
+        </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </StackLayout>
+    
+</ContentPage>

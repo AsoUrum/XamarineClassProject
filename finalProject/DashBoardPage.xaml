@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.DashBoardPage">
+
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to your profile " HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+        </Frame>
+
+        <Label x:Name="profileName"  TextColor="Black" HorizontalOptions="End" FontSize="Large"/>
+
+        <Label Text="Explore the best of the food information we offer. We hope that you enjoy all the delicacies we have." 
+               TextColor="Black" 
+               HorizontalOptions="Center" 
+               FontSize="20"/>
+
+
+        <Button Text="Check out our recipes" 
+                WidthRequest="400" 
+                HeightRequest="50" 
+                HorizontalOptions="Center"
+                Margin="0,20"
+                FontSize="Large" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnCheckRecipes"
+                Clicked="btnCheckRecipes_Clicked"
+                
+                />
+
+
+
+        <Button Text="Search Ingrediet details" 
+                WidthRequest="400" 
+                HeightRequest="50" 
+                HorizontalOptions="Center"
+                Margin="0,20"
+                FontSize="Large" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnSearchDetails"
+                Clicked="btnSearchDetails_Clicked"
+                
+                />
+
+
+        <Button Text="Update your prifile" 
+                WidthRequest="400" 
+                HeightRequest="50" 
+                HorizontalOptions="Center"
+                Margin="0,20"
+                FontSize="Large" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnUpdate"
+               Clicked="btnUpdate_Clicked"
+               
+                
+                />
+
+
+        <Button Text="Sign_OuT your prifile" 
+                WidthRequest="400" 
+                HeightRequest="50" 
+                HorizontalOptions="Center"
+                Margin="0,20"
+                FontSize="Large" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnSignOut"
+               Clicked="btnSignOut_Clicked"
+               
+                
+                />
+
+
+    </StackLayout>
+
+
+
+</ContentPage>

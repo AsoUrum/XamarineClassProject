@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.IngredientsSearchPage">
+    
+    
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Ingredient search!" HorizontalTextAlignment="Center" TextColor="White" FontSize="10"/>
+        </Frame>
+        
+        <Label Text="Enter an ingrediant (eg, Apple, Banana)" FontSize="Small" Padding="5,10,30,10"/>
+        <Entry x:Name="query"  Placeholder="Ingredient here" FontSize="Large" TextColor="Black" Margin="0,20" HorizontalTextAlignment="Center"/>
+
+        <Label Text="Enter quantity or unit (eg 1,2,3)" FontSize="Small" Padding="5,5,5,5"/>
+        <Entry 
+            x:Name="number"  
+            Placeholder="quantity  here" 
+            FontSize="Large" 
+            Margin="0,20" 
+            TextColor="Black"
+            HorizontalTextAlignment="Center"/>
+
+        <Label Text="Select an Sort type" FontSize="Medium" Padding="5,5,5,5"/>
+        <Picker 
+            x:Name="SortPicker" 
+            Title="Sort type" 
+            FontAttributes="Bold"  
+            FontSize="Medium"
+            TextColor="Black"
+            HeightRequest="50"
+            Margin="0,20" 
+            HorizontalTextAlignment="Center"
+            BackgroundColor="LightBlue"/>
+
+        <Button Text="Search" 
+                WidthRequest="200" 
+                HeightRequest="40" 
+                HorizontalOptions="Center" 
+                FontSize="Medium" 
+                FontAttributes="Bold"
+                BackgroundColor="LightSlateGray"
+                x:Name="btnSearch"
+                
+                Clicked="btnSearch_Clicked"/>
+
+
+    </StackLayout>
+    
+    
+</ContentPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="finalProject.MainPage">
+
+
+    <CarouselView x:Name="carouselRecipes">
+
+        <CarouselView.ItemsLayout>
+            <LinearItemsLayout Orientation="Horizontal" ItemSpacing="1"/>
+        </CarouselView.ItemsLayout>
+
+        <CarouselView.ItemTemplate>
+            <DataTemplate>
+                <StackLayout>
+                    <Frame HasShadow="True"
+                           CornerRadius="60"
+                           Margin="20"
+                           HeightRequest="380" 
+                           WidthRequest="300" 
+                           HorizontalOptions="Center"
+                           VerticalOptions="CenterAndExpand"
+                           BorderColor="Black"
+                           BackgroundColor="Bisque">
+                        <StackLayout>
+                            <Label Text="{Binding id}" 
+                                   FontAttributes="Bold"  
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Start" 
+                                   TextColor="Black"
+                                   FontSize="Large"/>
+                           
+                            <Image x:Name="recipImage" Aspect="Fill" HeightRequest="250">
+                                <Image.Source>
+                                    <UriImageSource Uri="{Binding image}"/>
+                                </Image.Source>
+                                
+                            </Image>
+                            <Label Text="{Binding title}" 
+                                   FontAttributes="Bold"  
+                                   HorizontalOptions="Center" 
+                                   VerticalOptions="Start" 
+                                   TextColor="Black"
+                                   FontSize="Large"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+</ContentPage>
+
